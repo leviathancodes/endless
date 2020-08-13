@@ -4,7 +4,6 @@ import App from './App';
 import * as serviceWorker from './serviceWorker';
 import { ThemeProvider } from 'styled-components';
 import theme from './themes/theme';
-import './assets/Lato/Lato-Light.ttf';
 
 ReactDOM.render(
   <ThemeProvider theme={theme}>
