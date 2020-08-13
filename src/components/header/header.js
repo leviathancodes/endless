@@ -11,14 +11,16 @@ const Container = styled.div`
 `;
 
 const Logo = styled.img`
-padding-left: 128px;
+    padding-left: 128px;
+    transition: all 0.3s;
     width: 15%;
     &:hover {
         cursor: pointer;
+        transform: translateY(-2px);
     }
     @media (max-width: 1028px) {
-        padding-left: 48px;
-        width: 40%;
+        padding-left: 24px;
+        width: 25%;
       }
 `;
 

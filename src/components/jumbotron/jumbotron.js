@@ -19,6 +19,11 @@ const Container = styled.div`
         background-size: cover;
         height: 70vh;
       }
+
+      @media (max-height: 375px) {
+        background-size: cover;
+        height: 100vh;
+      }
 `;
 
 const TextContainer = styled.div`
@@ -39,7 +44,7 @@ const Title = styled.h1`
     color: white;
     margin: 10px 0 10px 0;
     font-size: 48px;
-    font-weight: 300;
+    font-weight: 400;
 
     @media (max-width: 1028px) {
         font-size: 24px;

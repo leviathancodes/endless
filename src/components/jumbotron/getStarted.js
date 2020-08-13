@@ -4,7 +4,7 @@ import styled from 'styled-components';
 const Text = styled.p`
     color: #2F3237;
     text-transform: uppercase;
-    font-weight: 500;
+    font-weight: 700;
 `;
 
 const Container = styled.div`
@@ -17,6 +17,11 @@ const Container = styled.div`
     &:hover {
         background-color: #339e87;
         cursor: pointer;
+        transform: translateY(-3px);
+        &:active {
+            transform: translateY(-1px);
+            box-shadow: 0 .5rm 1rem rgba($color-black, .4);;
+        }
     }
 `
 

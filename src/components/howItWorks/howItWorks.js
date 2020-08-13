@@ -9,7 +9,6 @@ const Container = styled.div`
 
 const SubContainer = styled.div`
     width: 90%;
-    
     flex-direction: column;
 
 `;
@@ -20,6 +19,7 @@ const ListItemContainer = styled.div`
     justify-content: center;
     align-items: center;
 
+
 `;
 
 const ListContainer = styled.div`
@@ -27,6 +27,11 @@ const ListContainer = styled.div`
     align-content: center;
     justify-content: space-evenly;
     margin: 2em 0 4em 0;
+
+    @media (max-width: 1028px) {
+        flex-direction: column;
+      }
+
 `;
 
 const ListNumber = styled.h2`
@@ -34,6 +39,11 @@ const ListNumber = styled.h2`
     display: inline-block;
     font-size: 48px;
     font-weight: 200;
+
+    @media (max-width: 1028px) {
+        margin-bottom: 8px;
+    }
+
 `;
 
 const ListItemTitle = styled.h4`
@@ -47,6 +57,11 @@ const ListItemBody = styled.p`
     text-align: center;
     margin-top: 16px;
     width: 80%;
+
+    @media (max-width: 1028px) {
+        margin-top: 8px;
+        margin-bottom: 24px;
+    }
 `;
 
 const Title = styled.h1`
