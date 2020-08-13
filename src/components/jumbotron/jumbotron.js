@@ -66,10 +66,10 @@ const Paragraph = styled.p`
 const Jumbotron = () => {
     return <Container>
         <TextContainer>
-            <Paragraph>New Games & Acccessories</Paragraph>
-            <Title>Monthly packages.</Title>
-            <Title>Excitement delivered daily.</Title>
-            <Paragraph>What's the best way to shop for the latest video games and peripherals?  How about never shopping at all?  You'll get new stuff on your doorstep - every month.</Paragraph>
+            <Paragraph id="jumbotron_title_small">New Games & Acccessories</Paragraph>
+            <Title id="jumbotron_title_01">Monthly packages.</Title>
+            <Title id="jumbotron_title_02">Excitement delivered daily.</Title>
+            <Paragraph id="jumbotron_description">What's the best way to shop for the latest video games and peripherals?  How about never shopping at all?  You'll get new stuff on your doorstep - every month.</Paragraph>
             <GetStarted margin="16px 0 0 0"/>
         </TextContainer>
     </Container>

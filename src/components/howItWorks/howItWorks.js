@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import styled from 'styled-components';
+import getHowItWorks from '../../api/getHowItWorks';
 
 const Container = styled.div`
     display: flex;
@@ -75,14 +76,14 @@ const HowItWorks = () => {
     // Makes a fetch request to get info from API
 
     const [howItWorksData, setHowItWorksData] = useState(false);
+    const [loading, setLoading] = useState(false);
 
     useEffect(() => {
         async function fetchData() {
-            const response = await fetch('https://uqnzta2geb.execute-api.us-east-1.amazonaws.com/default/FrontEndCodeChallenge');
-            const data = await response.json();
-            console.log(data);
-            data.sort((a, b) => (a.stepNumber > b.stepNumber) ? 1 : -1)
+            setLoading(true);
+            const data = await getHowItWorks();
             setHowItWorksData(data);
+            setLoading(false);
         }
         fetchData();
     }, []);
@@ -113,7 +114,9 @@ const HowItWorks = () => {
     }
 
 
-    return (
+    return loading ? (
+        <Title id="loading" aria-label="loading">Loading...</Title>
+    ) : (
         <Container>
             <SubContainer>
                 <Title>How It Works</Title>

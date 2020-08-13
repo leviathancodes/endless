@@ -27,7 +27,7 @@ const Container = styled.div`
 
 const GetStarted = ({ margin }) => {
     return (
-        <Container containerMargin={margin}>
+        <Container id="getStartedButton" containerMargin={margin}>
             <Text>Get Started</Text>
         </Container>
     )
